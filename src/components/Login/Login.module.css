@@ -1,0 +1,39 @@
+.login {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 500px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.username, .password {
+    font-size: 1rem;
+    margin-left: 0.8rem;
+}
+
+.usernameLabel {
+    margin-bottom: 2rem;
+}
+
+.passwordLabel {
+    margin-bottom: 2rem;
+}
+
+.loginButton {
+    flex: 1 100%;
+    background-color: #74b840;
+    color: white;
+    border: none;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0.4rem;
+    text-decoration: none;
+    text-align: center;
+}

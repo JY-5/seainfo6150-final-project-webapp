@@ -1,0 +1,116 @@
+.container {
+    /* width: 80%; */
+    font-family: 'Rubik', sans-serif;
+
+    /* width: 200rem; */
+}
+
+.container div {
+    margin-bottom: 0.7rem;
+}
+
+.addPanel {
+    display: flex;
+    justify-content: center;
+}
+
+.toAdd {
+    width: 60rem;
+}
+
+.container h1 {
+    color: #539222;
+}
+
+.container label {
+    margin-right: 0.5rem;
+}
+
+.addedRecipe {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 2rem 1rem;
+}
+
+.link {
+    text-decoration: none;
+    background-color: #6eb339;
+    padding: 0.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    width: 8rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.link:hover {
+    background-color: #539222;
+}
+
+.instructions {
+    height: auto;
+
+}
+.form {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.title {
+    display: flex;
+}
+
+.title input {
+    flex: 1;
+}
+
+.ingedients {
+    display: flex;
+}
+
+.ingrediens input {
+    flex: 1;
+}
+
+.utensils {
+    display: flex;
+}
+
+.utensils input {
+    flex: 1;
+}
+
+.instructions {
+    display: flex;
+    flex-flow: column;
+}
+
+.instructions textarea {
+    height: 30rem;
+}
+
+.category {
+
+}
+
+.addButton {
+    /* flex: 1; */
+}
+
+.addButton input {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #6eb339;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.addButton input:hover {
+    background-color: #539222;
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Footer tests renders correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    Contact Us: (408) 123-4567
+  </div>
+</div>
+`;

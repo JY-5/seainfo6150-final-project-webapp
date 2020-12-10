@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add SearchResult tests renders correctly 1`] = `
+<div>
+  <div
+    class="result"
+  >
+    <h3 />
+    <ul
+      class="list"
+    >
+      <li
+        class="li"
+      >
+        <img
+          alt=""
+          class="image"
+          src=""
+        />
+        <p
+          class="title"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;

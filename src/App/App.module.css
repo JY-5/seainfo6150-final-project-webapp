@@ -1,0 +1,149 @@
+body {
+    margin-top: 13rem;
+}
+
+.nav {
+    /* border-bottom: 1px solid rgb(156, 155, 155); */
+    box-shadow: 0 4px 6px -2px rgba(221,221,221,0.64);
+    /* margin-bottom: 1rem; */
+    /* justify-content: space-between; */
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+
+.logoPanel {
+    display: flex;
+}
+
+.logoLink {
+    align-self: center;
+}
+
+.logoName {
+    text-decoration: none;
+}
+
+.name {
+    font-family: 'Lobster', cursive;
+    color: #6eb339;
+    font-size: 3rem;
+}
+
+.ul {
+    /* 
+            padding: 0.4rem 2rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+ */
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        list-style: none;
+        font-family: 'Prompt', sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0.4rem 0;
+        height: 13rem;
+        /* width: 100%; */
+
+}
+
+.ul li {
+    /* align-self: center; */
+}
+
+.logo {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-right: 0.2rem;
+}
+
+.addNew {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #6eb339;
+    padding: 0.2rem;
+    border-radius: 4px;
+}
+
+.login {
+    text-decoration: none;
+    color: #413e3e;
+    font-size: 1.1rem;
+}
+
+.home {
+    display: grid;
+    grid-template-rows: 1fr;
+    /* grid-template-columns: 13rem 1fr; */
+    grid-template-columns: 1fr 9fr;
+
+    grid-gap: 2.5rem;
+    /* display: flex;
+    flex-flow: row wrap; */
+}
+
+.categories {
+    /* grid-row: 1 / 4;
+    grid-column: 1 / 2; */
+    margin-left: 2rem;
+
+}
+.searchPanel {
+    display: flex;
+    flex-flow: column wrap;
+}
+.searchLink {
+
+} 
+
+.search {
+    height: 1.4rem;
+    width: 15rem;
+    margin-bottom: 0.2rem;
+}
+
+.searchLink {
+    color: white;
+    text-decoration: none;
+    /* margin-left: 1rem; */
+    background-color: #6eb339;
+    border-radius: 4px;
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    flex: 1;
+}
+
+.footer {
+    text-align: center;
+    height: 2rem;
+    background-color: #fbfbfb;
+    margin-top: 10rem;
+}
+
+@media screen and (min-width: 220px) {
+
+    body {
+        /* margin-top: 12rem; */
+    }
+    .ul {
+    }
+    /* */
+}
+  
+@media screen and (min-width: 1000px) {
+    .recommendation {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .recommendation {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

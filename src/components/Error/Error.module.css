@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Prompt', sans-serif;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.container h1 {
+    color: #539222;
+}
+
+.container p {
+    font-size: 1rem;
+}
+
+.container button {
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+.container img {
+    width: 20rem;
+    height: 20rem;
+}

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Login tests renders correctly 1`] = `
+<div>
+  <div
+    class="login"
+  >
+    <div
+      class="input"
+    >
+      <label
+        class="usernameLabel"
+      >
+        Username:
+        <input
+          class="username"
+          type="text"
+        />
+      </label>
+      <label
+        class="passwordLabel"
+      >
+        Password:
+        <input
+          class="password"
+          type="password"
+        />
+      </label>
+      
+      <button
+        class="loginButton"
+        disabled=""
+      >
+        Login
+      </button>
+    </div>
+  </div>
+</div>
+`;

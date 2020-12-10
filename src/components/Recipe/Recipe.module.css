@@ -1,0 +1,28 @@
+.container {
+    margin: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.title {
+    margin-top: 6rem;
+    font-family: 'Prompt', sans-serif;
+    color: #539222;
+}
+
+.image {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 5px;
+}
+
+.responsive {
+    border-radius: 5px;
+}
+
+.container li {
+    list-style: none;
+}
+
+.container ul {
+    padding-left: 0;
+}

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Search tests renders correctly 1`] = `
+<div>
+  <div>
+    <input
+      class="search"
+      name="search"
+      type="text"
+    />
+    <input
+      class="button"
+      type="submit"
+      value="Search"
+    />
+  </div>
+</div>
+`;
