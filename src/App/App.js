@@ -114,7 +114,7 @@ function App(props) {
           )}
         />
         <Route path="/" render={() => <Home categories={categories} popularRecipes={Object.values(popularRecipes)} allRecipes={allRecipes}/>}/>
-        <Route path="404 page" component={Error} />
+        <Route path="/404page" component={Error} />
       </Switch>
       </div>
       <div className={styles.footer}>
