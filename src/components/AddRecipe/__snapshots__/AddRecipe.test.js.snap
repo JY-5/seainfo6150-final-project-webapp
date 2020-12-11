@@ -6,10 +6,10 @@ exports[`Add recipe tests renders correctly 1`] = `
     class="container"
   >
     <div
-      class="content"
+      class="addPanel"
     >
       <div
-        class="form"
+        class="toAdd"
       >
         <h1>
           Add a new recipe
@@ -29,7 +29,6 @@ exports[`Add recipe tests renders correctly 1`] = `
               id="title"
               name="title"
               required=""
-              size="50"
               type="text"
             />
           </div>
@@ -60,6 +59,9 @@ exports[`Add recipe tests renders correctly 1`] = `
               id="category"
               name="category"
             >
+              <option
+                value=""
+              />
               <option
                 value="American"
               >
@@ -115,6 +117,9 @@ exports[`Add recipe tests renders correctly 1`] = `
               name="difficulty"
             >
               <option
+                value=""
+              />
+              <option
                 value="Beginner"
               >
                 Beginner
@@ -157,7 +162,7 @@ exports[`Add recipe tests renders correctly 1`] = `
               id="cheap"
               name="cost"
               type="radio"
-              value="1"
+              value="$"
             />
             <label
               for="cheap"
@@ -168,7 +173,7 @@ exports[`Add recipe tests renders correctly 1`] = `
               id="affordable"
               name="cost"
               type="radio"
-              value="2"
+              value="$$"
             />
             <label
               for="affordable"
@@ -179,7 +184,7 @@ exports[`Add recipe tests renders correctly 1`] = `
               id="expensive"
               name="cost"
               type="radio"
-              value="3"
+              value="$$$"
             />
             <label
               for="expensive"
@@ -194,7 +199,7 @@ exports[`Add recipe tests renders correctly 1`] = `
               id="vegetarian"
               name="vegetarian"
               type="checkbox"
-              value="1"
+              value="Yes"
             />
             <label
               for="vegetarian"
@@ -214,7 +219,6 @@ exports[`Add recipe tests renders correctly 1`] = `
               id="ingredients"
               name="ingredients"
               required=""
-              size="100"
               type="text"
             />
           </div>
@@ -229,7 +233,6 @@ exports[`Add recipe tests renders correctly 1`] = `
             <input
               id="utensils"
               name="utensils"
-              size="100"
               type="text"
             />
           </div>
@@ -242,11 +245,9 @@ exports[`Add recipe tests renders correctly 1`] = `
               Instructions*
             </label>
             <textarea
-              cols="100"
               id="instructions"
               name="instructions"
               required=""
-              rows="10"
             />
           </div>
           <div

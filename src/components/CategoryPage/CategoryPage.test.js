@@ -85,12 +85,10 @@ const allRecipes = {"1": {
 }}
 
 describe("Add CategoryPage tests", () => {
-
     it("renders correctly", () => {
       jest.mock('react-router-dom', () => ({
         ...jest.requireActual('react-router-dom'),
         useParams: jest.fn().mockImplementation(() => { return { categoryId:"1" }})
-
       }));
       const { container } = render(<Router><CategoryPage categories={categories} allRecipes={allRecipes}/></Router>);
       expect(container).toMatchSnapshot();

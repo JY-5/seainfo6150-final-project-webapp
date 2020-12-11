@@ -110,7 +110,10 @@ const allRecipes = {"1": {
 
 describe("Home tests", () => {
   it("renders the home component correctly", () => {
-
+    jest.mock('react-router-dom', () => ({
+      ...jest.requireActual('react-router-dom'),
+      useLocation: jest.fn()
+    }));
     const { container } = render(<Router><Home categories={categories} popularRecipes={popularRecipes} allRecipes={allRecipes}/></Router>);
     expect(container).toMatchSnapshot();
   });

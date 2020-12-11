@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link, useRouteMatch } from "react-router-dom";
 import styles from './Login.module.css';
+import { withRouter } from 'react-router';
 
 const Login = (props) => {
     const [username, setUsername] = useState('');
@@ -14,12 +14,11 @@ const Login = (props) => {
     };
 
     const login = () => {
+        props.history.goBack();
         setIsPending(true);
         setIsPending(false);
         props.changeLogIn(username);
     };
-
-    let { url } = useRouteMatch();
 
     return (
         <div className={styles.login}>
@@ -30,10 +29,10 @@ const Login = (props) => {
                 <label className={styles.passwordLabel}>Password: 
                     <input className={styles.password} disabled={isPending} type="password"/>
                 </label>   
-                <Link to={`${url}`} className={styles.loginButton} onClick={login} disabled={isDisabled || isPending} >{ isPending ? "..." : "Login"}</Link>
+                <button className={styles.loginButton} onClick={login} disabled={isDisabled || isPending} >{ isPending ? "..." : "Login"}</button>
             </div>             
         </div>
     )
 }
 
-export default Login
+export default withRouter(Login)

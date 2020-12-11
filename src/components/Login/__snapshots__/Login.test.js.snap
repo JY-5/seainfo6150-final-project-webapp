@@ -26,7 +26,6 @@ exports[`Add Login tests renders correctly 1`] = `
           type="password"
         />
       </label>
-      
       <button
         class="loginButton"
         disabled=""

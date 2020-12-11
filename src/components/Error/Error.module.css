@@ -4,6 +4,8 @@
     font-family: 'Prompt', sans-serif;
     justify-content: space-around;
     margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .container h1 {
@@ -22,4 +24,7 @@
 .container img {
     width: 20rem;
     height: 20rem;
+    margin-top: 2rem;
+    max-width: 100%; 
+    height: auto;
 }

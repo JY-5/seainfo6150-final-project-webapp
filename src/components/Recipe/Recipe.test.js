@@ -1,6 +1,7 @@
 import React from "react";
 import Recipe from './Recipe';
 import { render } from "@testing-library/react";
+import {BrowserRouter as Router} from "react-router-dom";
 
 const recipe =  {
     "title": "Salmon Steak",
@@ -17,7 +18,11 @@ const recipe =  {
 
 describe("Add Recipe tests", () => {
     it("renders correctly", () => {
-      const { container } = render(<Recipe recipe={recipe}/>);
-      expect(container).toMatchSnapshot();
+        jest.mock('react-router-dom', () => ({
+            ...jest.requireActual('react-router-dom'),
+            useLocation: jest.fn()
+        }));
+        const { container } = render(<Router><Recipe recipe={recipe}/></Router>);
+        expect(container).toMatchSnapshot();
     });
 });

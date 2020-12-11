@@ -10,8 +10,9 @@ import AddRecipe from "../components/AddRecipe/AddRecipe";
 import Footer from '../components/Footer/Footer';
 import styles from './App.module.css';
 import SearchResult from '../components/SearchResult/SearchResult';
+import { withRouter } from 'react-router';
 
-function App() {
+function App(props) {
   const [categories, setCategories] = useState({});
   const [popularRecipes, setPopularRecipes] = useState({"0": {title: '', id: '', url: ''}}); 
   const[ifLoggedIn, setIfLoggedIn] = useState(false);
@@ -73,14 +74,14 @@ function App() {
                   Search
                 </Link>
               </li>
-              <li>
+              <li className={styles.addLi}>
                 <Link to="/newRecipe" className={styles.addNew}>
                   Add a new recipe
                 </Link>
               </li>  
-              <li>      
+              <li className={styles.logLi}>      
                 {ifLoggedIn ?
-                  <Link to="/" onClick={changeLogIn} className={styles.login}>Log out</Link> :
+                  <button onClick={changeLogIn} className={styles.logout}>Log out</button> :
                   <Link to="/login" className={styles.login}>Log in</Link>
                 }
               </li>
@@ -91,10 +92,9 @@ function App() {
         <Route path="/login" exact render={() => <Login changeLogIn={changeLogIn} />}/>
         <Route path="/recipes/:name" render={({ match }) => <SearchResult searchWord={searchInput} header={`Recipes result of ${match.params.name}`}/>} />
         <Route path="/recipes/" render={() => <SearchResult searchWord={searchInput} header='All recipes: '/>} />
-        <Route path="/newRecipe" exact render={props => (
+        <Route path="/newRecipe" exact render={() => (
           ifLoggedIn ?
-          <AddRecipe username={username} ifLoggedIn={ifLoggedIn}/> :
-          <Login changeLogIn={changeLogIn}/>) } /> 
+          <AddRecipe username={username} ifLoggedIn={ifLoggedIn}/> : props.history.push('/login'))}/> 
         <Route 
           path="/recipe/:recipeId"
           exact
@@ -114,7 +114,7 @@ function App() {
           )}
         />
         <Route path="/" render={() => <Home categories={categories} popularRecipes={Object.values(popularRecipes)} allRecipes={allRecipes}/>}/>
-        <Route component={Error} />
+        <Route path="404 page" component={Error} />
       </Switch>
       </div>
       <div className={styles.footer}>
@@ -124,4 +124,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

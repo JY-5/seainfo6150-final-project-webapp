@@ -3,7 +3,7 @@
 exports[`Home tests renders the home component correctly 1`] = `
 <div>
   <div
-    class="home"
+    class="container"
   >
     <div
       class="left"
@@ -15,7 +15,7 @@ exports[`Home tests renders the home component correctly 1`] = `
           Recipe Categories
         </h2>
         <ul
-          class="list"
+          class="ul"
         >
           <li
             class="li"
@@ -224,7 +224,9 @@ exports[`Home tests renders the home component correctly 1`] = `
       class="right"
     >
       <div>
-        <div>
+        <div
+          class="container"
+        >
           <header
             class="header"
           >
@@ -234,7 +236,7 @@ exports[`Home tests renders the home component correctly 1`] = `
             class="recommendation"
           >
             <li
-              class="item"
+              class="li"
             >
               <a
                 class="title"
@@ -254,7 +256,7 @@ exports[`Home tests renders the home component correctly 1`] = `
               </a>
             </li>
             <li
-              class="item"
+              class="li"
             >
               <a
                 class="title"
@@ -275,7 +277,9 @@ exports[`Home tests renders the home component correctly 1`] = `
             </li>
           </ul>
         </div>
-        <div>
+        <div
+          class="container"
+        >
           <header
             class="header"
           >
@@ -285,7 +289,7 @@ exports[`Home tests renders the home component correctly 1`] = `
             class="recommendation"
           >
             <li
-              class="item"
+              class="li"
             >
               <a
                 class="title"
@@ -305,7 +309,7 @@ exports[`Home tests renders the home component correctly 1`] = `
               </a>
             </li>
             <li
-              class="item"
+              class="li"
             >
               <a
                 class="title"

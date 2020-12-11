@@ -1,9 +1,16 @@
+.container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .image {
-    width: 15rem;
-    height: 15rem;
-    /* width: 100%; 
-    height: auto; */
+    width: 100%; 
     border-radius: 5px;
+    height: 70%;
+    object-fit: cover;
+    grid-auto-rows: 10rem;
+    height: 15vw;
+
 }
 
 .recommendation {
@@ -16,9 +23,7 @@
     gap: 10px;
 }
 
-.item {
-    /* margin-right: 0.4rem;
-    margin-bottom: 0.8rem; */
+.li {
     font-family: 'Prompt', sans-serif;
     font-size: 1rem;
     font-weight: 600;
@@ -46,7 +51,6 @@
     color: #539222;
 }
 
- 
 @media screen and (min-width: 760px) {
     .recommendation {
         grid-template-columns: repeat(2, 1fr);

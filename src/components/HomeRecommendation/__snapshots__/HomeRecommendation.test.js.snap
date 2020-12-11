@@ -3,7 +3,9 @@
 exports[`Add HomeRecommendation tests renders correctly 1`] = `
 <div>
   <div>
-    <div>
+    <div
+      class="container"
+    >
       <header
         class="header"
       >
@@ -13,7 +15,7 @@ exports[`Add HomeRecommendation tests renders correctly 1`] = `
         class="recommendation"
       >
         <li
-          class="item"
+          class="li"
         >
           <a
             class="title"
@@ -33,7 +35,7 @@ exports[`Add HomeRecommendation tests renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="item"
+          class="li"
         >
           <a
             class="title"
@@ -54,7 +56,9 @@ exports[`Add HomeRecommendation tests renders correctly 1`] = `
         </li>
       </ul>
     </div>
-    <div>
+    <div
+      class="container"
+    >
       <header
         class="header"
       >
@@ -64,7 +68,7 @@ exports[`Add HomeRecommendation tests renders correctly 1`] = `
         class="recommendation"
       >
         <li
-          class="item"
+          class="li"
         >
           <a
             class="title"
@@ -84,7 +88,7 @@ exports[`Add HomeRecommendation tests renders correctly 1`] = `
           </a>
         </li>
         <li
-          class="item"
+          class="li"
         >
           <a
             class="title"

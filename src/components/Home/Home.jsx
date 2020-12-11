@@ -1,11 +1,18 @@
 import React from 'react'
 import styles from './Home.module.css';
-import { Switch, Route, Link,BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import HomeRecommendation from '../HomeRecommendation/HomeRecommendation';
 import Error from '../Error/Error';
 import CategoryPage from '../CategoryPage/CategoryPage';
+import { useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 
 const Home = (props) => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
         <div className={styles.container}>  
             <div className={styles.left}> 
@@ -13,7 +20,7 @@ const Home = (props) => {
                     <h2 className={styles.header}>
                        Recipe Categories
                     </h2>
-                    <ul className={styles.list}>
+                    <ul className={styles.ul}>
                         {Object.keys(props.categories).map((id) => (
                             <li key={id} className={styles.li}>
                                 <Link to={`/categories/${id}`} className={styles.link}>

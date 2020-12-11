@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const RecipeRecommendation = (props) => {
     return (
-        <div>
+        <div className={styles.container}>
             <header className={styles.header}>{props.text}</header>
             <ul className={styles.recommendation}>
                 {props.recipes.map((recipe) => (
-                    <li key={recipe.id} className={styles.item}>
+                    <li key={recipe.id} className={styles.li}>
                         <Link to={`/recipe/${recipe.id}`} className={styles.title}>
                         <img className={styles.image} src={recipe.url} alt={recipe.title} />
                         </Link>

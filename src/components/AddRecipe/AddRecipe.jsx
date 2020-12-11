@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import styles from './AddRecipe.module.css';
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { withRouter } from 'react-router';
 
 const AddRecipe = (props) => {
     const [submittedForm, setSubmittedForm] = useState();
@@ -10,6 +11,7 @@ const AddRecipe = (props) => {
         const data = new FormData(e.target);
         setSubmittedForm(data);
     };
+    // console.log("const: " + (submittedForm.get("cost")) ? "null" : submittedForm.get("cost"));
 
     return (
       <div className={styles.container}>
@@ -22,11 +24,10 @@ const AddRecipe = (props) => {
               <div>Category: {submittedForm.get("category")}</div>
               <div>Difficulty: {submittedForm.get("difficulty")}</div>
               <div>Preparation Time: {submittedForm.get("preparationTime")}</div>
-              <div>Cost: {document.getElementById("cheap") && document.getElementById("cheap").checked ? "$" : 
-                         (document.getElementById("affordable") && document.getElementById("affordable").checked ? "$$" :
-                         (document.getElementById("expensive") && document.getElementById("expensive").checked ? "$$$" : "N/A"))
-                }</div>
-              <div>Vegetarian: {submittedForm.get("vegetarian") ? "Yes" : "No"}</div>
+              {/* {(submittedForm.get("cost")) ? null :
+              (<div>Cost: {submittedForm.get("cost")}</div>)} */}
+              <div>Cost: {submittedForm.get("cost")}</div>
+              <div>Vegetarian: {submittedForm.get("vegetarian")}</div>
               <div>Ingredients: {submittedForm.get("ingredients")}</div>
               <div>Utensils: {submittedForm.get("utensils")}</div>
               <div>Instructions: {submittedForm.get("instructions")}</div>
@@ -48,6 +49,7 @@ const AddRecipe = (props) => {
                 <div className={styles.category}>
                   <label htmlFor="category">Category</label>
                   <select name="category" id="category">
+                    <option value=""></option>
                     <option value="American">American</option>
                     <option value="Chinese">Chinese</option>
                     <option value="Japanese">Japanese</option>
@@ -61,6 +63,7 @@ const AddRecipe = (props) => {
                 <div className={styles.difficulty}>
                   <label htmlFor="difficulty">Difficulty</label>
                   <select name="difficulty" id="difficulty">
+                    <option value=""></option>
                     <option value="Beginner">Beginner</option>
                     <option value="Intermediate">Intermediate</option>
                     <option value="Expert">Expert</option>
@@ -72,15 +75,15 @@ const AddRecipe = (props) => {
                 </div>
                 <div className={styles.cost}>
                   <label htmlFor="cost">Cost</label>
-                  <input type="radio" name="cost" id="cheap" value="1"/>
+                  <input type="radio" name="cost" id="cheap" value="$"/>
                   <label htmlFor="cheap">$</label>
-                  <input type="radio" name="cost" id="affordable" value="2"/>
+                  <input type="radio" name="cost" id="affordable" value="$$"/>
                   <label htmlFor="affordable">$$</label>
-                  <input type="radio" name="cost" id="expensive" value="3"/>
+                  <input type="radio" name="cost" id="expensive" value="$$$"/>
                   <label htmlFor="expensive">$$$</label>
                 </div>
                 <div className={styles.vegetarian}>
-                  <input type="checkbox" name="vegetarian" id="vegetarian" value="1"/>
+                  <input type="checkbox" name="vegetarian" id="vegetarian" value="Yes"/>
                   <label htmlFor="vegetarian">Vegetarian</label>
                 </div>
                 <div className={styles.ingredients}>
@@ -107,4 +110,4 @@ const AddRecipe = (props) => {
     )
 }
 
-export default AddRecipe
+export default withRouter(AddRecipe)

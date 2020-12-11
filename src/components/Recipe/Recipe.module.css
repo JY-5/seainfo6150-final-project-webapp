@@ -1,5 +1,6 @@
 .container {
     margin: 2rem;
+    margin-top: 14.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -25,4 +26,10 @@
 
 .container ul {
     padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin-top: 7rem;
+    }
 }

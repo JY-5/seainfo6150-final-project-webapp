@@ -11,14 +11,14 @@ exports[`Add Recipe tests renders correctly 1`] = `
       Salmon Steak
     </h2>
     <div>
-      <h3>
-        Ingredients
-      </h3>
       <img
         alt="Salmon Steak"
         class="image"
         src="https://www.cookingclassy.com/wp-content/uploads/2017/02/skillet-seared-salmon-2.jpg"
       />
+      <h3>
+        Ingredients
+      </h3>
       <p>
         300 gm salmon fish, 1 cup onion, 2 tablespoon lemon pepper seasoning, 4 tablespoon butter, 4 tablespoon lemon juice, garlic salt as required, 4 slices lemon
       </p>

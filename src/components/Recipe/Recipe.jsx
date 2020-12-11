@@ -1,12 +1,17 @@
 import React from 'react';
-import { useState } from 'react';
-import PropTypes from "prop-types";
+import { useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 import styles from "./Recipe.module.css";
 import roastedChicken1 from "../../assets/images/roastedChicken1.jpg";
 import roastedChicken2 from "../../assets/images/roastedChicken2.jpg";
 import roastedChicken3 from "../../assets/images/roastedChicken3.jpg";
 
 const Recipe = ({ recipe }) => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+      
     return (
         <div className={styles.container}>
             {recipe ?
