@@ -11,7 +11,6 @@ const AddRecipe = (props) => {
         const data = new FormData(e.target);
         setSubmittedForm(data);
     };
-    // console.log("const: " + (submittedForm.get("cost")) ? "null" : submittedForm.get("cost"));
 
     return (
       <div className={styles.container}>
@@ -24,8 +23,6 @@ const AddRecipe = (props) => {
               <div>Category: {submittedForm.get("category")}</div>
               <div>Difficulty: {submittedForm.get("difficulty")}</div>
               <div>Preparation Time: {submittedForm.get("preparationTime")}</div>
-              {/* {(submittedForm.get("cost")) ? null :
-              (<div>Cost: {submittedForm.get("cost")}</div>)} */}
               <div>Cost: {submittedForm.get("cost")}</div>
               <div>Vegetarian: {submittedForm.get("vegetarian")}</div>
               <div>Ingredients: {submittedForm.get("ingredients")}</div>

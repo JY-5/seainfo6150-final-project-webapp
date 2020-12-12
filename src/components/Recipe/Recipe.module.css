@@ -11,8 +11,9 @@
 }
 
 .image {
-    width: 20rem;
-    height: 20rem;
+    width: 17rem; 
+    height: 17rem;
+    object-fit: cover;
     border-radius: 5px;
 }
 

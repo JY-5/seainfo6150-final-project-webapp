@@ -5,6 +5,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 
 describe("Add App tests", () => {
     it("renders correctly", () => {
+      window.scrollTo = jest.fn();
       const { container } = render(<Router><App/></Router>);
       expect(container).toMatchSnapshot();
     });

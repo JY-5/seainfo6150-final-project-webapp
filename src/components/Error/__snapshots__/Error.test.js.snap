@@ -2,15 +2,24 @@
 
 exports[`Add Error tests renders correctly 1`] = `
 <div>
-  <div>
+  <div
+    class="container"
+  >
     <div>
       <h1>
-        The page is not found
+        Whoops!
       </h1>
+      <p>
+        We couldn't find the page you are looking for
+      </p>
       <button>
-        Go to home
+        Go home
       </button>
     </div>
+    <img
+      alt="a bitten donut"
+      src="https://webstockreview.net/images/donut-clipart-bitten-donut-2.jpg"
+    />
   </div>
 </div>
 `;

@@ -5,7 +5,7 @@ exports[`Add Footer tests renders correctly 1`] = `
   <div
     class="container"
   >
-    Contact Us: (408) 123-4567
+    Contact us: (408) 123-4567
   </div>
 </div>
 `;

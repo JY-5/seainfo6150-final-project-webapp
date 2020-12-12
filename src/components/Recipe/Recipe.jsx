@@ -26,7 +26,10 @@ const Recipe = ({ recipe }) => {
                                 (max-width: 600px) 50vw,
                                 30vw"
                         src={roastedChicken3} alt={recipe["title"]}/>)
-                    : (<img className={styles.image} src={recipe.url} alt={recipe["title"]}/>)}
+                    : (<div className={styles.imageContainer}>
+                        <img className={styles.image} src={recipe.url} alt={recipe["title"]}/>
+                        </div>
+                        )}
                     <h3>Ingredients</h3>
                     <p>{recipe["ingredients"]}</p>
                 </div>

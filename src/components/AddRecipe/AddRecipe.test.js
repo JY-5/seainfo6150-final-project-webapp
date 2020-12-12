@@ -7,6 +7,7 @@ import {
 
 describe("Add recipe tests", () => {
     it("renders correctly", () => {
+      window.scrollTo = jest.fn();
       const { container } = render(<Router><AddRecipe username="JY"/></Router>);
       expect(container).toMatchSnapshot();
     });

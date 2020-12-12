@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import styles from "./SearchResult.module.css";
-import PropTypes from "prop-types";
 
 const SearchResult = (props) => {
     const[recipesFound, setRecipesFound] = useState([{title: '', id: '', url: ''}]);
     useEffect(() => {
         const fetchRecipes = async () => {
             // search according to the search keyword
-          const response = await fetch("https://run.mocky.io/v3/c4071e7b-ec14-45bc-8ca3-6115283e9689");
-          const responseJson = await response.json();
-          setRecipesFound(Object.values(responseJson));
-          };
-          fetchRecipes();
+            const response = await fetch("https://run.mocky.io/v3/c4071e7b-ec14-45bc-8ca3-6115283e9689");
+            const responseJson = await response.json();
+            setRecipesFound(Object.values(responseJson));
+            };
+            fetchRecipes();
     }, []);
 
     return (

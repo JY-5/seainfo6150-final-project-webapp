@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    useParams
-  } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import CategoryRecipes from '../CategoryRecipes/CategoryRecipes';
 import styles from "./CategoryPage.module.css";
 

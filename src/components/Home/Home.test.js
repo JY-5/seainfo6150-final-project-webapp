@@ -114,6 +114,7 @@ describe("Home tests", () => {
       ...jest.requireActual('react-router-dom'),
       useLocation: jest.fn()
     }));
+    window.scrollTo = jest.fn();
     const { container } = render(<Router><Home categories={categories} popularRecipes={popularRecipes} allRecipes={allRecipes}/></Router>);
     expect(container).toMatchSnapshot();
   });

@@ -9,8 +9,7 @@
     height: 70%;
     object-fit: cover;
     grid-auto-rows: 10rem;
-    height: 15vw;
-
+    height: 30vw;
 }
 
 .recommendation {
@@ -54,6 +53,10 @@
 @media screen and (min-width: 760px) {
     .recommendation {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image {
+        height: 18vw;
     }
 }
   
