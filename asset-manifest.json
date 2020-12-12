@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/seainfo6150-final-project-webapp/static/css/main.93c41c42.chunk.css",
-    "main.js": "/seainfo6150-final-project-webapp/static/js/main.ee15b9ee.chunk.js",
-    "main.js.map": "/seainfo6150-final-project-webapp/static/js/main.ee15b9ee.chunk.js.map",
+    "main.css": "/seainfo6150-final-project-webapp/static/css/main.578a771b.chunk.css",
+    "main.js": "/seainfo6150-final-project-webapp/static/js/main.26efc0e2.chunk.js",
+    "main.js.map": "/seainfo6150-final-project-webapp/static/js/main.26efc0e2.chunk.js.map",
     "runtime~main.js": "/seainfo6150-final-project-webapp/static/js/runtime~main.c4d7f5e8.js",
     "runtime~main.js.map": "/seainfo6150-final-project-webapp/static/js/runtime~main.c4d7f5e8.js.map",
-    "static/js/2.15b260c7.chunk.js": "/seainfo6150-final-project-webapp/static/js/2.15b260c7.chunk.js",
-    "static/js/2.15b260c7.chunk.js.map": "/seainfo6150-final-project-webapp/static/js/2.15b260c7.chunk.js.map",
+    "static/js/2.c7d462db.chunk.js": "/seainfo6150-final-project-webapp/static/js/2.c7d462db.chunk.js",
+    "static/js/2.c7d462db.chunk.js.map": "/seainfo6150-final-project-webapp/static/js/2.c7d462db.chunk.js.map",
     "index.html": "/seainfo6150-final-project-webapp/index.html",
-    "precache-manifest.b5717ccda37e2a200c1368f9cf070167.js": "/seainfo6150-final-project-webapp/precache-manifest.b5717ccda37e2a200c1368f9cf070167.js",
+    "precache-manifest.0d6a76dfebe80bc361a6fe2002132ebc.js": "/seainfo6150-final-project-webapp/precache-manifest.0d6a76dfebe80bc361a6fe2002132ebc.js",
     "service-worker.js": "/seainfo6150-final-project-webapp/service-worker.js",
-    "static/css/main.93c41c42.chunk.css.map": "/seainfo6150-final-project-webapp/static/css/main.93c41c42.chunk.css.map",
+    "static/css/main.578a771b.chunk.css.map": "/seainfo6150-final-project-webapp/static/css/main.578a771b.chunk.css.map",
     "static/media/roastedChicken1.jpg": "/seainfo6150-final-project-webapp/static/media/roastedChicken1.29bb5a3b.jpg",
     "static/media/roastedChicken2.jpg": "/seainfo6150-final-project-webapp/static/media/roastedChicken2.c4dd426e.jpg",
     "static/media/roastedChicken3.jpg": "/seainfo6150-final-project-webapp/static/media/roastedChicken3.f222a730.jpg"
